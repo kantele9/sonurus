@@ -1,26 +1,25 @@
-// app/manifest.ts
 import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Мой Next.js PWA App',
-    short_name: 'NextPWA',
-    description: 'Простой пример PWA на Next.js',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
-    theme_color: '#000000',
+    name: 'Sonorus Music',
+    short_name: 'Sonorus',
+    description: 'Приложение на React и Vite',
+    theme_color: '#ffffff',
     icons: [
       {
-        src: '/icon-192x192.png',
+        src: 'Icon192px.png',
         sizes: '192x192',
-        type: 'image/png',
+        type: 'image/png'
       },
       {
-        src: '/icon-512x512.png',
+        src: 'Icon512px.png',
         sizes: '512x512',
-        type: 'image/png',
-      },
-    ],
+        type: 'image/png'
+      }
+    ]
   }
 }
