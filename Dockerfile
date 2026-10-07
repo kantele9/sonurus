@@ -3,7 +3,7 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 COPY package.json package-lock.json
-RUN npm ci --omit=dev
+RUN npm install --omit=dev
 
 
 FROM node:24-alpine AS builder
